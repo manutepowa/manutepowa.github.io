@@ -4,7 +4,7 @@
   "description": "Perfil developer",
   "main": "server.js",
   "scripts": {
-    "start": "webpack-dev-server --content-base ./"
+    "start": "webpack-dev-server --content-base ./build "
   },
   "author": "Manuel Tercero",
   "license": "ISC",
@@ -21,6 +21,9 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
     "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.11.2",
+    "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.2"
   }

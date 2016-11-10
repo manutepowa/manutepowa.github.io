@@ -1,0 +1,15 @@
+$primary-color: #333;
+
+body{
+	background: $primary-color;
+	
+	.cole{
+		background: blue; 
+	
+		&:hover{
+			background: yellow;
+
+		}
+	}
+
+}

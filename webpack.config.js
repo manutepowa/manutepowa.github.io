@@ -1,5 +1,5 @@
 // const webpack = require('webpack');
-
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
 	devtool: 'eval',
 	entry: './src/index.jsx',
@@ -22,7 +22,15 @@ module.exports = {
 		          presets: ['es2015', 'react','stage-0']
 		        }
 			},
-			{ test: /\.css$/, loader: "style-loader!css-loader" }
+			{ 
+				test: /\.scss$/,
+                loader: ExtractTextPlugin.extract('css!sass')
+			}
 		]
-	}
+	},
+	plugins: [
+        new ExtractTextPlugin('css/main.css', {
+            allChunks: true
+        })
+    ]
 }
