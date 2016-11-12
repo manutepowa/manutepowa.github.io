@@ -1,15 +1,61 @@
-$primary-color: #333;
 
+.flex-container{
+	// width: 100%;
+	min-height: 100vh;
+	background: grey;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.bordered{
+	border: 1px solid black;
+}
 body{
-	background: $primary-color;
-	
-	.cole{
-		background: blue; 
-	
-		&:hover{
-			background: yellow;
+	color: #565656;
+}
+.card-container{
+	// background: blue;
+	display: flex;
+	justify-content: center;
+	// padding: 12px;
+	align-content: center;
+	.panel{
+		border: 0;
+		img{
+			width: 150px;
+		}
+		.panel-heading{
+			display: flex;
+			flex-direction: column;
+			.panel-title{
+				padding: 7px;
+			}
+			.aboutme{
+				display: flex;
+				&>div{
+					align-self: center;
+					padding: 20px;
+				}
+
+				.panel-description{
+					.name{
+						line-height: 0%;
+						span{
+							font-size: 9pt;
+						}
+					}
+				}
+			}
 
 		}
-	}
 
+		.footer-card{
+			display: flex;
+			justify-content: space-around;
+			background: #2E3741;
+			div{
+				padding: 10px
+			}
+		}
+	}
 }
