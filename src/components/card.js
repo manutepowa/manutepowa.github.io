@@ -12,7 +12,7 @@ export default class Card extends Component {
                             <div className="panel-heading">
                                 <div className="aboutme">
                                     <div>
-                                        <img className="img-rounded" src="./img/perfil.jpg" alt="Foto"/>
+                                        <img className="img-rounded" src="https://github.com/manutepowa/manutepowa.github.io/blob/master/build/img/perfil.jpg?raw=true" alt="Foto"/>
                                     </div>
                                     <div className="panel-description">
                                         <div className="name">
