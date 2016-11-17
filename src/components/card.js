@@ -12,25 +12,26 @@ export default class Card extends Component {
                             <div className="panel-heading">
                                 <div className="aboutme">
                                     <div>
-                                        <img src="./img/perfil.jpg" alt="Foto"/>
+                                        <img className="img-rounded" src="./img/perfil.jpg" alt="Foto"/>
                                     </div>
                                     <div className="panel-description">
                                         <div className="name">
                                             <h4><b>Manuel Tercero Soria</b></h4>
-                                            <span>Software Developer</span><hr/>
+                                            <span>Computer Science and Engineering</span><hr/>
                                         </div>
-                                        <div>
-                                            Manuel tercero Soria
+                                        <div className="details-me">
+                                            <div>Edad: </div>
+                                            <div>29 años</div>
                                         </div>
-                                        <div>
-                                            Manuel tercero Soria
+                                        <div className="details-me">
+                                            <div>Población: </div>
+                                            <div>ELDA (Alicante)</div>
                                         </div>
-                                         <div>
-                                            Manuel tercero Soria
+                                        <div className="details-me">
+                                            FullStack Developer
                                         </div>
-                                        <div>
-                                            Manuel tercero Soria
-                                        </div>
+                                        
+                                        
                                     </div>
                                     
                                 </div>
